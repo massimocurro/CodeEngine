@@ -1,8 +1,6 @@
 import sys
 import requests
 import json
-from cryptography.fernet import Fernet
-
 
 def main(dict):
     headers = {"Content-Type": "application/json"}
