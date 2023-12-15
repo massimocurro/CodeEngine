@@ -1,7 +1,7 @@
 import sys
-import pip._vendor.requests
 import json
-from cryptography.fernet import Fernet
+import pip._vendor.requests
+
 
 def main(dict):
     headers = {"Content-Type": "application/json"}
