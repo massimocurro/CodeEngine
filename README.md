@@ -2,11 +2,11 @@
 
 ## Building
 
-`pack build pipenv-sample --buildpack paketo-buildpacks/python`
+`pack build run-sample --buildpack paketo-buildpacks/python`
 
 ## Running
 
-`docker run --interactive --tty --env PORT=8080 --publish 8080:8080 pipenv-sample`
+`docker run --interactive --tty --env PORT=8080 --publish 8080:8080 run-sample`
 
 ## Viewing
 
