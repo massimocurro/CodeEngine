@@ -75,7 +75,7 @@ func main() {
 
 	// Our HTTP handler func
 
-        http.Get("https://function-76.1at6rgz00yjr.eu-de.codeengine.appdomain.cloud")
+        //http.Get("https://function-76.1at6rgz00yjr.eu-de.codeengine.appdomain.cloud")
         http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		Debug(1, "Request: %s -> %s", r.Method, r.URL)
 		envs := []string{
