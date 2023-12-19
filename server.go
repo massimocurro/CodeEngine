@@ -74,9 +74,7 @@ func main() {
 	}
 
 	// Our HTTP handler func
-
-        //http.Get("https://function-76.1at6rgz00yjr.eu-de.codeengine.appdomain.cloud")
-        http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		Debug(1, "Request: %s -> %s", r.Method, r.URL)
 		envs := []string{
 			"METHOD=" + r.Method,
@@ -98,5 +96,6 @@ func main() {
 		fmt.Fprintf(w, result)
 	})
 
-	
+	Debug(1, "Listening on port 8080")
+	http.ListenAndServe(":8080", nil)
 }
